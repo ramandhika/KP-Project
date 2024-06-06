@@ -27,3 +27,28 @@
   <!-- Main CSS File -->
 <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
 </head>
+
+<body class="index-page">
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="{{ route('home') }}" class="logo d-flex align-items-center me-auto">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="{{ asset('assets/img/logo.png') }}" alt="">
+          <h4 class="sitename my-auto text-redCV"><b>CV. CITRA PERKASA</b></h4>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="{{ route('home') }}#hero" class="">Beranda<br></a></li>
+            <li><a href="{{ route('home') }}#about">Tentang Kami</a></li>
+            <li><a href="{{ route('home') }}#services">Client</a></li>
+            <li><a href="{{ route('home') }}#portfolio">Layanan</a></li>
+            <li><a href="{{ route('blog') }}">Blog</a></li>
+            <li><a href="{{ route('home') }}#contact">Kontak</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </header>

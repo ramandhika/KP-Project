@@ -1,29 +1,4 @@
 @include('include.header')
-<body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
-    <a href="{{ route('home') }}" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="{{ asset('assets/img/logo.png') }}" alt="">
-        <h4 class="sitename my-auto text-redCV"><b>CV. CITRA PERKASA</b></h4>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="">Beranda<br></a></li>
-          <li><a href="#about">Tentang Kami</a></li>
-          <li><a href="#services">Client</a></li>
-          <li><a href="#portfolio">Layanan</a></li>
-          <li><a href="#team">Blog</a></li>
-          <li><a href="#contact">Kontak</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-    </div>
-  </header>
-
   <main class="main">
 
     <!-- Hero Section -->
@@ -33,14 +8,14 @@
         <div class="row gy-4">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
             <h1>Grow your business with Vesperr</h1>
-            <p>We are team of talented designers making websites with Bootstrap</p>
+            <p>Protect Your Home and Business with our reliable fire extinguishers </p>
             <div class="d-flex">
-              <a href="#about" class="btn-get-started">Get Started</a>
+              <a href="#about" class="btn-get-started">Mulai</a>
               <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"></a>
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img">
-            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+            <img src="assets/img/hero-img.png" class="img-fluid animated rounded" alt="">
           </div>
         </div>
       </div>
@@ -55,27 +30,27 @@
         <div class="row gy-4">
 
           <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+            <img src="{{ asset('assets/img/clients/image 10.png') }}" class="img-fluid" alt="">
           </div><!-- End Client Item -->
 
           <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+            <img src="{{ asset('assets/img/clients/image 11.png') }}" class="img-fluid" alt="">
           </div><!-- End Client Item -->
 
           <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+            <img src="{{ asset('assets/img/clients/image 12.png') }}" class="img-fluid" alt="">
           </div><!-- End Client Item -->
 
           <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+            <img src="{{ asset('assets/img/clients/image 13.png') }}" class="img-fluid" alt="">
           </div><!-- End Client Item -->
 
           <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+            <img src="{{ asset('assets/img/clients/image 8.png') }}" class="img-fluid" alt="">
           </div><!-- End Client Item -->
 
           <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+            <img src="{{ asset('assets/img/clients/image 9.png') }}" class="img-fluid" alt="">
           </div><!-- End Client Item -->
 
         </div>

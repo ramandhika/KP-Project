@@ -715,8 +715,8 @@ section,
 }
 
 .clients .client-logo img {
-    padding: 20px 40px;
-    max-width: 90%;
+    padding: 20px 15px;
+    max-width: 100%;
     transition: 0.3s;
     opacity: 0.5;
     filter: grayscale(100);
@@ -1781,4 +1781,13 @@ section,
 
 .text-redCV {
     color: #950606;
+}
+
+.card-title {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.card-text {
+    color: var(--default-color);
 }
