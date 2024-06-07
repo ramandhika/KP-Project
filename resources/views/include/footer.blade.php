@@ -15,7 +15,7 @@
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | Developed by <a href="{{ route('home') }}">Ramandhika Ilham Pratama, Cantika Putri Lylla, Fajar </a>
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | Developed by <a href="{{ route('home') }}">Ramandhika Ilham Pratama, Cantika Putri Lylla, Fajar Tri Hartanto</a>
     </div>
 
   </footer>
