@@ -10,6 +10,6 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::all();
-        return view('dashboard', compact('posts'));
+        return view('adminDashboard.index', compact('posts'));
     }
 }
