@@ -6,7 +6,7 @@
     <header id="header" class="header fixed-top d-flex align-items-center">
 
         <div class="d-flex align-items-center justify-content-between">
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="{{ route('dashboard') }}" class="logo d-flex align-items-center">
                 <img src="{{ asset('assets/img/logo.png') }}" alt="">
                 <span class="d-none d-lg-block" style="font-size: 1.5vw;">CV. CITRA PERKASA</span>
             </a>
@@ -70,7 +70,7 @@
                                             Blog</small></span>
                                 </div>
                                 <div>
-                                    <a href="{{ route('home') }}" class="btn btn-primary mt-3"><i
+                                    <a href="{{ route('dashboard.create') }}" class="btn btn-primary mt-3"><i
                                             class="ri-file-add-line"></i>
                                         Add Post</a>
                                 </div>
@@ -99,9 +99,10 @@
                                             <td>{{ $post->created_at }}</td>
                                             <td>{{ $post->updated_at }}</td>
                                             <td class="d-flex gap-2">
-                                                <a href="{{ route('home', $post->slug) }}" class="btn btn-primary"><i
-                                                        class="ri-file-edit-line"></i> Edit</a>
-                                                <form action="{{ route('home', $post->slug) }}" method="POST">
+                                                <a href="{{ route('dashboard.edit', $post->slug) }}"
+                                                    class="btn btn-primary"><i class="ri-file-edit-line"></i> Edit</a>
+                                                <form action="{{ route('dashboard.destroy', $post->slug) }}"
+                                                    method="POST">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-danger"><i

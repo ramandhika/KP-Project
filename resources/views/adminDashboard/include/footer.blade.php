@@ -16,6 +16,7 @@
     <script src="{{ asset('assets/vendorDashboardAdmin/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('assets/vendorDashboardAdmin/simple-datatables/simple-datatables.js') }}"></script>
     <script src="{{ asset('assets/vendorDashboardAdmin/tinymce/tinymce.min.js') }}"></script>
+    <script src="{{ asset('assets/vendorDashboardAdmin/quill/quill.js') }}"></script>
     <!-- Template Main JS File -->
     <script src="{{ asset('assets/jsDashboardAdmin/main.js') }}"></script>
 
