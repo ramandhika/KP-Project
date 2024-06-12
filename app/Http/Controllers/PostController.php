@@ -29,7 +29,18 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request->all());
+        $request->validate([
+            'title' => 'required',
+            'content' => 'required',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+
+
+        Post::create($request->all());
+
+        return redirect()->route('adminDashboard.index')
+            ->with('success', 'Post created successfully.');
     }
 
     /**
