@@ -18,21 +18,32 @@
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Tambah Postingan Blog</h5>
+                        <h5 class="card-title">Edit Postingan Blog</h5>
                         <!-- General Form Elements -->
-                        <form method="POST" action="{{ route('dashboard.store') }}" enctype="multipart/form-data"
-                            onsubmit="submitForm(event)">
+                        <form method="POST" action="{{ route('dashboard.update', $post->slug) }}"
+                            enctype="multipart/form-data" onsubmit="submitForm(event)">
                             @csrf
+                            @method('PATCH')
                             <div class="row mb-3">
                                 <label for="inputText" class="col-sm-2 col-form-label">Title</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" name="title">
+                                    <input type="text" class="form-control" name="title"
+                                        value="{{ $post->title }}">
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <label for="inputNumber" class="col-sm-2 col-form-label">File Upload</label>
                                 <div class="col-sm-10">
-                                    <input class="form-control" type="file" id="formFile" name="image">
+                                    @if ($post->image)
+                                        <img src="{{ asset('storage/' . $post->image) }}" alt="Post Image"
+                                            width="200"><br>
+                                        <p class="my-2"><em>Jika ingin mengubah thumbnail blog, Klik 👇</em></p>
+                                        <input class="form-control" type="file" id="formFile" name="image">
+                                        <!-- Hidden input to store the current image path -->
+                                        <input type="hidden" name="current_image" value="{{ $post->image }}">
+                                    @else
+                                        <input class="form-control" type="file" id="formFile" name="image">
+                                    @endif
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -40,6 +51,7 @@
                                 <div class="col-sm-10">
                                     <!-- Quill Editor Default -->
                                     <div id="quillEditorDefault" style="height: 50vh;">
+                                        {!! $post->content !!}
                                     </div>
                                     <!-- Hidden input to store the content -->
                                     <input type="hidden" name="content" id="content">
@@ -55,6 +67,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 

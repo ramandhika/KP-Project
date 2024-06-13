@@ -18,15 +18,6 @@
     <script src="{{ asset('assets/vendorDashboardAdmin/tinymce/tinymce.min.js') }}"></script>
     <script src="{{ asset('assets/vendorDashboardAdmin/quill/quill.js') }}"></script>
     <!-- Template Main JS File -->
-    <script>
-        // Function to handle form submission
-        function submitForm() {
-            // Get the HTML content from the Quill editor
-            var content = quill.root.innerHTML;
-            // Set the value of the hidden input field
-            document.getElementById('content').value = content;
-        }
-    </script>
     <script src="{{ asset('assets/jsDashboardAdmin/main.js') }}"></script>
 
     </body>

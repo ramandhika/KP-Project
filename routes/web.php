@@ -9,9 +9,13 @@ Route::get('/', function () {
     return view('index');
 })->name('home');
 
-Route::get('/blog', function () {
-    return view('blog');
-})->name('blog');
+// Route::get('/blog', function () {
+//     return view('blog');
+// })->name('blog');
+
+Route::get('/blog', [PostController::class, 'blog'])->name('blog');
+
+Route::get('/blog/{slug}', [PostController::class, 'showDetail'])->name('blogDetail');
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
@@ -21,10 +25,15 @@ Route::get('/dashboard', [PostController::class, 'index'])->middleware(['auth', 
 Route::prefix('dashboard/post')->name('dashboard.')->middleware(['auth', 'verified'])->group(function () {
     Route::get('/create', [PostController::class, 'create'])->name('create');
     Route::post('/store', [PostController::class, 'store'])->name('store');
-    Route::get('/edit/{post}', [PostController::class, 'edit'])->name('edit');
-    Route::patch('/update/{post}', [PostController::class, 'update'])->name('update');
-    Route::delete('/destroy/{post}', [PostController::class, 'destroy'])->name('destroy');
+    Route::get('/edit/{slug}', [PostController::class, 'edit'])->name('edit');
+    Route::patch('/update/{slug}', [PostController::class, 'update'])->name('update');
+    Route::delete('/destroy/{slug}', [PostController::class, 'destroy'])->name('destroy');
 });
+
+// Route::get('/blog/{slug}', function ($slug) {
+//     $post = Post::where('slug', $slug)->first();
+//     return view('blogDetail', compact('post'));
+// })->name('blogDetail');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
