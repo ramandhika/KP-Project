@@ -115,7 +115,7 @@
                         bahan berkualitas tinggi dan prosedur pengisian terstandarisasi untuk
                         memastikan alat selalu siap pakai dan berfungsi optimal.
                     </p>
-                    <a href="#" class="about-btn align-self-center align-self-xl-end"><span>Pelajari lebih
+                    <a href="#stats" class="about-btn align-self-center align-self-xl-end"><span>Pelajari lebih
                             lanjut</span> <i class="bi bi-chevron-right"></i></a>
                 </div>
             </div>
