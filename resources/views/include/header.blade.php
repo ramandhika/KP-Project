@@ -28,6 +28,11 @@
 
     <!-- Main CSS File -->
     <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
+    <style>
+        /* * {
+            border: 1px solid red;
+        } */
+    </style>
 </head>
 
 <body class="index-page">
@@ -45,9 +50,9 @@
                 <ul>
                     <li><a href="{{ route('home') }}#hero" class="">Beranda<br></a></li>
                     <li><a href="{{ route('home') }}#about">Tentang Kami</a></li>
-                    <li><a href="{{ route('home') }}#services">Client</a></li>
-                    <li><a href="{{ route('home') }}#portfolio">Layanan</a></li>
-                    <li><a href="{{ route('blog') }}">Blog</a></li>
+                    <li><a href="{{ route('home') }}#layanan">Layanan</a></li>
+                    <li><a href="{{ route('home') }}#portfolio">Portfolio</a></li>
+                    <li><a href="{{ route('home') }}#blog">Blog</a></li>
                     <li><a href="{{ route('home') }}#contact">Kontak</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>

@@ -696,9 +696,9 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Clients Section
+# portfolio Section
 --------------------------------------------------------------*/
-.clients {
+.portfolio {
     --background-color: color-mix(
         in srgb,
         var(--accent-color),
@@ -707,14 +707,14 @@ section,
     padding: 20px 0;
 }
 
-.clients .client-logo {
+.portfolio .client-logo {
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
 
-.clients .client-logo img {
+.portfolio .client-logo img {
     padding: 20px 15px;
     max-width: 100%;
     transition: 0.3s;
@@ -722,13 +722,13 @@ section,
     filter: grayscale(100);
 }
 
-.clients .client-logo img:hover {
+.portfolio .client-logo img:hover {
     filter: none;
     opacity: 1;
 }
 
 @media (max-width: 640px) {
-    .clients .client-logo img {
+    .portfolio .client-logo img {
         padding: 20px;
     }
 }
@@ -1224,7 +1224,6 @@ section,
 }
 
 .contact .php-email-form input[type="text"],
-.contact .php-email-form input[type="email"],
 .contact .php-email-form textarea {
     font-size: 14px;
     padding: 10px 15px;
@@ -1240,13 +1239,11 @@ section,
 }
 
 .contact .php-email-form input[type="text"]:focus,
-.contact .php-email-form input[type="email"]:focus,
 .contact .php-email-form textarea:focus {
     border-color: var(--accent-color);
 }
 
 .contact .php-email-form input[type="text"]::placeholder,
-.contact .php-email-form input[type="email"]::placeholder,
 .contact .php-email-form textarea::placeholder {
     color: color-mix(in srgb, var(--default-color), transparent 70%);
 }

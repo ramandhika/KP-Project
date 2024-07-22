@@ -1,4 +1,21 @@
 @include('include.header')
+<style>
+    .card-img-wrapper {
+        width: 100%;
+        height: 300px;
+        /* Set a fixed height for all images */
+        overflow: hidden;
+    }
+
+    .card-img-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* Ensures the image covers the container without distorting */
+        object-position: center;
+        /* Center the image within the container */
+    }
+</style>
 <main class="main">
 
     <!-- Page Title -->
@@ -26,7 +43,9 @@
                 @foreach ($posts as $post)
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card">
-                            <img src="{{ asset('storage/' . $post->image) }}" class="card-img-top" alt="Blog Image 1">
+                            <div class="card-img-wrapper">
+                                <img src="{{ asset('storage/' . $post->image) }}" class="card-img-top" alt="Blog Image">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title"><a
                                         href="{{ route('blogDetail', $post->slug) }}">{{ $post->title }}</a></h5>

@@ -18,9 +18,15 @@ class PostController extends Controller
         return view('adminDashboard.index', compact('posts'));
     }
 
+    public function indexHalaman()
+    {
+        $posts = Post::latest()->take(3)->get();
+        return view('index', compact('posts'));
+    }
+
     public function blog()
     {
-        $posts = Post::all();
+        $posts = Post::latest()->get();
         return view('blog', compact('posts'));
     }
 
