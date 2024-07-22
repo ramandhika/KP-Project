@@ -4,9 +4,29 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>CV. CITRA PERKASA</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <!-- Primary Meta Tags -->
+    <title>ASYLUM Produk APAR Terbaik di Solo - CV. CITRA PERKASA</title>
+    <meta name="title" content="ASYLUM Produk APAR Terbaik di Solo - CV. CITRA PERKASA" />
+    <meta name="description"
+        content="ASYLUM Produk APAR Terbaik di Solo Surakarta - CV. Citra Perkasa menyediakan berbagai macam produk APAR yang sesuai dengan kebutuhan Anda mulai dari rumahan, kantor hingga transportasi." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://citra-perkasa.algo-system.my.id/" />
+    <meta property="og:title" content="ASYLUM Produk APAR Terbaik di Solo - CV. CITRA PERKASA" />
+    <meta property="og:description"
+        content="ASYLUM Produk APAR Terbaik di Solo Surakarta - CV. Citra Perkasa menyediakan berbagai macam produk APAR yang sesuai dengan kebutuhan Anda mulai dari rumahan, kantor hingga transportasi." />
+    <meta property="og:image" content="{{ asset('assets/img/hero-img.png') }}" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="http://citra-perkasa.algo-system.my.id/" />
+    <meta property="twitter:title" content="ASYLUM Produk APAR Terbaik di Solo - CV. CITRA PERKASA" />
+    <meta property="twitter:description"
+        content="ASYLUM Produk APAR Terbaik di Solo Surakarta - CV. Citra Perkasa menyediakan berbagai macam produk APAR yang sesuai dengan kebutuhan Anda mulai dari rumahan, kantor hingga transportasi." />
+    <meta property="twitter:image" content="{{ asset('assets/img/hero-img.png') }}" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
 
     <!-- Favicons -->
     <link href="{{ asset('assets/img/favicon.ico') }}" rel="icon">
